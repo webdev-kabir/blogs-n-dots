@@ -1,0 +1,56 @@
+.articles{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* styles.css */
+.articles-container {
+    padding-top: 3rem; /* Equivalent to pt-12 */
+}
+
+.articles-heading {
+    /* Tailwind class: articles */
+    font-size: 2.25rem; /* Adjust if needed */
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.article-content{
+    background-color: #1C2C35;
+    padding: 15px;
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 5px;
+    border-left: 5px solid #81F59B;
+    transition: transform 0.3s ease;
+}
+.article-content.zoom-effect:hover {
+    transform: scale(1.02);
+}
+.articles-container {
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    width: 75%; 
+}
+
+.article-date {
+    color: #7AB6D9; /* Equivalent to gray-text */
+    font-size: .9rem; /* Adjust if needed */
+}
+
+.article-title {
+    font-size: 1.6rem; /* Equivalent to text-3xl */
+    font-weight: bold;
+}
+
+.article-summary {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+}
+
+.read-more {
+    color: #7AB6D9; /* Equivalent to gray-text */
+    font-size: .9rem;
+}

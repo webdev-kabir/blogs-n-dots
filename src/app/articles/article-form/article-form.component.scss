@@ -1,0 +1,34 @@
+.editor-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .html {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #f1f1f1;
+    min-height: 20px;
+    max-height: 10rem;
+    overflow: auto;
+  }
+  .custom-editor .angular-editor-textarea {
+    background-color: #f0f0f0; /* Change this to your desired background color */
+    color: #000; /* Text color */
+  }
+  
+  .custom-editor .angular-editor-toolbar {
+    background-color: #333; /* Change this to your desired toolbar background color */
+  }
+  
+  .custom-editor .angular-editor-toolbar .angular-editor-button,
+  .custom-editor .angular-editor-toolbar .angular-editor-dropdown {
+    color: #fff; /* Change this to your desired icon color */
+  }
+  
+  .custom-editor .angular-editor-toolbar .angular-editor-button:hover,
+  .custom-editor .angular-editor-toolbar .angular-editor-dropdown:hover {
+    background-color: #444; /* Change this to your desired hover background color */
+  }
+  

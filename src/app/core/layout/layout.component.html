@@ -1,0 +1,16 @@
+<div class="gradient-bg">
+  <div class="flex justify-center">
+    <edu-header
+      class="w-full md:w-[65%]"
+      (toggleSidenav)="toggleSidenav()"
+    ></edu-header>
+  </div>
+  <div class="flex justify-center">
+    <main class="w-full md:w-[65%]">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  <div class="flex justify-center">
+    <edu-footer class="w-full md:w-[65%]"></edu-footer>
+  </div>
+</div>

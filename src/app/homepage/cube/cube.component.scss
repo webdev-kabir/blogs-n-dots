@@ -1,0 +1,103 @@
+
+//Angular
+//JS
+//TS
+
+// * {
+//     --image-1: url("https://miro.medium.com/max/1400/1*uGRvXkzzytZ-8YxKaxYEBA.png");
+//     --image-2: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png");
+//     --image-3: url("https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png");
+//     --image-4: url("https://www.simplilearn.com/ice9/course_images/bundle313x225/NodeJS.svgz");
+//     --image-5: url("https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png");
+//     --image-6: url("https://res.cloudinary.com/teepublic/image/private/s--3G28Z3Jo--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_42332c,e_outline:35/co_42332c,e_outline:inner_fill:35/co_ffffff,e_outline:35/co_ffffff,e_outline:inner_fill:35/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1589988736/production/designs/10390341_0.jpg");
+// }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.cube-container {
+    width: 15em;
+    height: 15em;
+    text-align: center;
+    perspective: 45em;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 2s;
+}
+
+.cube-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #484f5a;
+    border: 1.5px solid #68C5D6;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.radio-button {
+    margin-bottom: 5em;
+}
+
+.cube-side:nth-child(1) {
+    transform: rotateY(0deg) translateZ(7.5em);
+    background-image: url("https://miro.medium.com/max/1400/1*uGRvXkzzytZ-8YxKaxYEBA.png");
+
+}
+.cube-side:nth-child(2) {
+    transform: rotateY(90deg) translateZ(7.5em);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png");
+}
+.cube-side:nth-child(3) {
+    transform: rotateY(180deg) translateZ(7.5em);
+    background-image: url("https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png");
+}
+.cube-side:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(7.5em);
+    background-image: url("https://www.simplilearn.com/ice9/course_images/bundle313x225/NodeJS.svgz");
+}
+.cube-side:nth-child(5) {
+    transform: rotateX(-90deg) translateZ(7.5em);
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png");
+}
+.cube-side:nth-child(6) {
+    transform: rotateX(90deg) translateZ(7.5em);
+    background-image: url("https://res.cloudinary.com/teepublic/image/private/s--3G28Z3Jo--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_42332c,e_outline:35/co_42332c,e_outline:inner_fill:35/co_ffffff,e_outline:35/co_ffffff,e_outline:inner_fill:35/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1589988736/production/designs/10390341_0.jpg");
+}
+
+
+.radio-button:checked ~ .cube {
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.radio-button:nth-child(1):checked ~ .cube { 
+    transform: rotateX(0deg) rotateY(20deg);
+}
+.radio-button:nth-child(2):checked ~ .cube { 
+    transform: rotateX(0deg) rotateY(180deg);
+}
+.radio-button:nth-child(3):checked ~ .cube { 
+    transform: rotateX(0deg) rotateY(90deg);
+}
+.radio-button:nth-child(4):checked ~ .cube { 
+    transform: rotateX(0deg) rotateY(-90deg);
+}
+.radio-button:nth-child(5):checked ~ .cube { 
+    transform: rotateX(-95deg) rotateY(0deg);
+}
+.radio-button:nth-child(6):checked ~ .cube { 
+    transform: rotateX(95deg) rotateY(0deg);
+}

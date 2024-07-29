@@ -1,0 +1,12 @@
+<div class="pt-12 text-white">
+    <h1 class="articles-heading">Articles</h1>
+
+    <div *ngFor="let article of articles" class="articles-container">
+        <div class="article-content zoom-effect">
+            <p class="article-date">{{ article.date }}</p>
+            <p class="article-title">{{ article.title }}</p>
+            <p class="article-summary">{{ article.summary }}</p>
+            <a class="read-more" [routerLink]="['/articles'+article.link]">Read more...</a>
+        </div>
+    </div>
+</div>
